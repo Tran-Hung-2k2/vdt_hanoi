@@ -6,16 +6,19 @@ from scheduler import *
 from task1 import *                                                                                                                                                     
 from task2 import *                                                                                                                                                     
 from task3 import *                                                                                                                                                     
-scheduler = Scheduler()                                                                                                                                                 
+scheduler = Scheduler()    
+task1 = Task1()                                                                                                                                             
+task2 = Task2()                                                                                                                                             
+task3 = Task3()                                                                                                                                             
 scheduler.SCH_Init()                                                                                                                                                    
 import time                                                                                                                                                             
                                                                                                                                                                         
 def print_hi(name):                                                                                                                                                     
     # Use a breakpoint in the code line below to debug your script.                                                                                                     
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.                                                                                                     
-scheduler.SCH_Add_Task(Task1, 2000, 1000)                                                                                                                                 
-scheduler.SCH_Add_Task(Task2, 3000, 2000)                                                                                                                               
-scheduler.SCH_Add_Task(Task3, 3000, 0)                                                                                                                                  
+scheduler.SCH_Add_Task(task1.Task1_Run, 2000, 5000)                                                                                                                                 
+scheduler.SCH_Add_Task(task2.Task2_Run, 1000, 5000)                                                                                                                               
+scheduler.SCH_Add_Task(task3.Task3_Run, 3000, 4000)                                                                                                                                  
 while True:                                                                                                                                                             
     scheduler.SCH_Update()                                                                                                                                              
     scheduler.SCH_Dispatch_Tasks()                                                                                                                                      
