@@ -8,8 +8,3 @@ class Task1:
                                                                                                                                                                         
     def Task1_Run(self):                                                                                                                                                
         print("Task 1 is activated!!!!")
-
-while True:
-    scheduler.SCH_Update()
-    scheduler.SCH_Dispatch_Tasks()
-    time.sleep(0.1)

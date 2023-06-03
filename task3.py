@@ -1,7 +1,7 @@
 class Task3:                                                                                                                                                            
     def __init__(self):                                                                                                                                                 
-        print("Init task 1")                                                                                                                                            
+        print("Init task 3")                                                                                                                                            
         return                                                                                                                                                          
                                                                                                                                                                         
     def Task3_Run(self):                                                                                                                                                
-        print("Task 1 is activated!!!!")
+        print("Task 3 is activated!!!!")

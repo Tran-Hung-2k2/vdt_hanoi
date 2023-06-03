@@ -13,7 +13,7 @@ import time
 def print_hi(name):                                                                                                                                                     
     # Use a breakpoint in the code line below to debug your script.                                                                                                     
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.                                                                                                     
-scheduler.SCH_Add_Task(Task1,2000,1000)                                                                                                                                 
+scheduler.SCH_Add_Task(Task1, 2000, 1000)                                                                                                                                 
 scheduler.SCH_Add_Task(Task2, 3000, 2000)                                                                                                                               
 scheduler.SCH_Add_Task(Task3, 3000, 0)                                                                                                                                  
 while True:                                                                                                                                                             
