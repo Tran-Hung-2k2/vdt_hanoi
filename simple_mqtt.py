@@ -2,12 +2,10 @@
 import random
 import time
 import  sys
-from  Adafruit_IO import  MQTTClient
-
+from  Adafruit_IO import MQTTClient
 
 AIO_USERNAME = "your_name"
 AIO_KEY = "your_key"
-
 
 client = MQTTClient(AIO_USERNAME , AIO_KEY)
 
