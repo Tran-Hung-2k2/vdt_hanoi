@@ -9,10 +9,11 @@ class Task:
 
     # Khai báo các thuộc tính của lớp Task
     pTask = None
-    Delay = 0
+    Delay = 0  # sau khi có nguồn thì delay rồi mới thực
     Period = 0
     RunMe = 0
     TaskID = -1
+
 
 # Định nghĩa lớp Scheduler
 class Scheduler:

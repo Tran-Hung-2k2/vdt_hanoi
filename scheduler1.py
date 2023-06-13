@@ -10,6 +10,7 @@ class Task:
     RunMe = 0
     TaskID = -1
 
+
 class Scheduler:
     TICK = 100
     SCH_MAX_TASKS = 40
@@ -47,7 +48,6 @@ class Scheduler:
                 self.SCH_tasks_G[i].pTask()
 
     def SCH_Delete(self, aTask):
-
         print(self.SCH_tasks_G)
         self.SCH_tasks_G.remove(aTask)
         self.current_index_task -= 1

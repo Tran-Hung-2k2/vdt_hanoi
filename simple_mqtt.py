@@ -1,13 +1,13 @@
-#pip install adafruit-io
+# pip install adafruit-io
 import random
 import time
-import  sys
-from  Adafruit_IO import MQTTClient
+import sys
+from Adafruit_IO import MQTTClient
 
 AIO_USERNAME = "your_name"
 AIO_KEY = "your_key"
 
-client = MQTTClient(AIO_USERNAME , AIO_KEY)
+client = MQTTClient(AIO_USERNAME, AIO_KEY)
 
 client.connect()
 client.loop_background()
